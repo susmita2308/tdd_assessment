@@ -1,0 +1,7 @@
+<div>
+    <h2>Sum Calculator</h2>
+    <input type="number" [(ngModel)]="number1" placeholder="Enter first number" name="number1" >
+    <input type="number" [(ngModel)]="number2" placeholder="Enter second number" name="number2" >
+    <button (click)="calculateSum(number1,number2)">Calculate Sum</button>
+    <p ngIf="sum !== null">Sum: {{ sum }}</p>
+  </div>
